@@ -1,1 +1,5 @@
 # Billboard_Hot_100_Scraper
+
+WHAT IT DOES SPECIFY YEAR
+
+NAMES FOLDER (DIR PATH)
