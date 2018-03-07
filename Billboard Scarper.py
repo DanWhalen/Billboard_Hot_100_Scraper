@@ -16,8 +16,8 @@ add = ['DR', 'MRS', 'MISS', 'MR', 'MISTER', 'MISTRESS', 'MASTER', 'DOCTOR']
 
 ##SET RUN PARAMETERS
 threshold = 100
-StartYear = 2017
-EndYear = 2017
+StartYear = 1990
+EndYear = 1991
 dir_path = "C:/Python 3.6/Python/Git Personas/DanWhalen/Billboard_Hot_100/names"
 
 ##DEFINE CUSTOM FUNCTIONS
@@ -49,9 +49,10 @@ def get_weeks():
         yr_url = urllib.request.urlopen("http://www.billboard.com/archive/charts/"+str(year)+"/hot-100").read()
         year_html = bs4.BeautifulSoup(yr_url, 'lxml')
         for link in year_html.find_all('a'):
-            if link.get('href')[8:12] == str(year):
-                week = str(year)+ "-" + str(link.get('href')[13:18])
-                target_weeks.append(week)
+            if link.get('href')[16:20] == str(year):
+                week = str(year)+ "-" + str(link.get('href')[21:26])
+                if len(week) == 10:
+                    target_weeks.append(week)
     return(target_weeks)
 
 def get_songs(w):
@@ -124,8 +125,11 @@ dataframe.to_csv(('Billboard Hot 100 ['+str(target_weeks[0])+' -- '+str(target_w
 ##_______________________________________________
 ##PICKLE I/O
 ##import pickle
+##
+##file_to_pickle = dataframe
+##
 ##pickle_out = open('C:/Python 3.6/Python/Git Personas/DanWhalen/Billboard_Hot_100/df.pickle', 'wb')
-##pickle.dump(dataframe, pickle_out)
+##pickle.dump(file_to_pickle, pickle_out)
 ##pickle_out.close()
 ##pickle_in = open('df.pickle', 'rb')
 ##df = pickle.load(pickle_in)
