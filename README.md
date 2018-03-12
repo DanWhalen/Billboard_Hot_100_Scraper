@@ -33,3 +33,4 @@ Although some of these string literals are indeed real given first names, they a
 ## Notes
 
 1. "Billboard Hot 100 Scraper.py" code ends with an optional block of pseudo code which outlines steps for Pickling data in/out.  Users may find this option useful when dealing with large data pulls.  It is on the user to incorporate complete working versions of this procedure, at whatever point in the "Billboard Hot 100 Scraper.py" they deem it necessary.
+2. "~EXAMPLE OUTPUT~ Billboard Hot 100 (2017-01-07 -- 2017-12-30, t=100).xlsx" is an example output file of Billboard Hot 100 Scraper, using StartYear = 2017, EndYear = 2017, and threshold = 100.
