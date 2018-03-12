@@ -5,7 +5,7 @@ Given a user specified date range, Billboard Hot 100 Scraper collects the title 
 
 The scraper then attempts to find and flag all singles with human names appearing in their title (first names only).  The code was custom engineered for a reseach project that required identifying past Billboard Hot 100 pop singles whose lyrics were about a specific, named individual.
 
-## What parameters must users specify before running "Billboard Hot 100 Scraper"?
+## How to run "Billboard Hot 100 Scraper"
 There are certain "run parameters" (variables that must be hard coded) users must set before running Billboard Hot 100 Scraper.  These variables are defined in lines 14-20, the block of code labeled "##SET RUN PARAMETERS".
 
 ***remove*** - (list) List of all strings that are commonly used as a human first name that you want to Billboard Hot 100 Scraper to ingnore in the "flag-suspected-human-names" step.  This is done to avoid false positives in the name flagging step, by singling out human names are more likely to be used as natural-language words in song titles.  
