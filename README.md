@@ -30,6 +30,6 @@ Although some of these string literals are indeed real given first names, they a
 
 - For example: By setting threshold = 100 before running Billboard Hot 100 Scraper, the user specifies that any name in the SSAPBN data set which was only given to 99 newborns or fewer, in any given year between 1880 and the present, will not be included in the list of names to check song titles for in the "flag-suspected-human-names" step.  If in *any* year, there were at least 100 babies born with the same name, that name will be searched for in the "flag-suspected-human-names" step.
 
-##Notes
+## Notes
 
 1. "Billboard Hot 100 Scraper.py" code ends with an optional block of pseudo code which outlines steps for Pickling data in/out.  Users may find this option useful when dealing with large data pulls.  It is on the user to incorporate complete working versions of this procedure, at whatever point in the "Billboard Hot 100 Scraper.py" they deem it necessary.
