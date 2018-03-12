@@ -3,7 +3,7 @@
 ## What is "Billboard Hot 100 Scraper"?
 Given a user specified date range, Billboard Hot 100 Scraper collects the title and artist of all Billboard Hot 100 singles that charted in that date range  (www.billboard.com/charts/hot-100).  It also records the date the single debuted on the charts.  
 
-The scraper then attempts to find and flag all singles with human names appearing in their title (first names only).  The code was custom engineered for a reseach project that required identifying all past Billboard Hot 100 pop singles whose lyrics were about a specific, named individual.
+The scraper then attempts to find and flag all singles with human names appearing in their title (first names only).  The code was custom engineered for a reseach project that required identifying past Billboard Hot 100 pop singles whose lyrics were about a specific, named individual.
 
 ## What parameters must users specify before running "Billboard Hot 100 Scraper"?
 There are certain "run parameters" (variables that must be hard coded) users must set before running Billboard Hot 100 Scraper.  These variables are defined in lines 14-20, the block of code labeled "##SET RUN PARAMETERS".
@@ -26,7 +26,7 @@ The zip file ("names.zip") contains a series of txt files, one for each year fro
 
 ***threshold*** - (int) Searching all the scraped song titles for just any string literal that happens to appear in the SSAPBN data set as a baby name tends to result in a large number of undesired false positives in the "flag-suspected-human-names" step.  This is due to the appearance of outlier/erronous data in SSAPBN, such as "YOU", "LOVE", "GIRL" or "BOY".  
 
-Although some of these string literals are indeed real given first names, they are more commonly appear as mere natural-language words in Billboard song titles.  Since the untimate goal of the scraper is to record all song titles, and flag those we suspect have lyrics about a specfic, named individual, we decided to only include a threshold for inclusion for strings appearing in the SSAPBN.
+Although some of these string literals are indeed real given first names, they are more commonly appear as natural-language words in Billboard song titles.  Since the ultimate goal of the scraper is to record all song titles, and flag those we suspect have lyrics about a specfic, named individual, we decided to only include a threshold for inclusion for strings appearing in the SSAPBN.
 
 - For example: By setting threshold = 100 before running Billboard Hot 100 Scraper, the user specifies that any name in the SSAPBN data set which was only given to 99 newborns or fewer, in any given year between 1880 and the present, will not be included in the list of names to check song titles for in the "flag-suspected-human-names" step.  If in *any* year, there were at least 100 babies born with the same name, that name will be searched for in the "flag-suspected-human-names" step.
 
