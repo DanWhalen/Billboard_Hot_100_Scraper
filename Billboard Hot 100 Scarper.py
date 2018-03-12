@@ -1,4 +1,4 @@
-##http://www.billboard.com/charts/hot-100/
+##www.billboard.com/charts/hot-100/
 import bs4, re, os, csv
 import urllib.request
 import pandas as pd
