@@ -16,7 +16,7 @@ remove = ['STONE', 'STORM', 'STORY', 'SEVEN', 'RIVER', 'QUEEN', 'KING', 'CHINA',
 add = ['DR', 'MRS', 'MISS', 'MR', 'MISTER', 'MISTRESS', 'MASTER', 'DOCTOR']
 StartYear = 1990
 EndYear = 1991
-dir_path = "C:/Python 3.6/Python/Git Personas/DanWhalen/Billboard_Hot_100/Scraper/names"
+dir_path = "C:/Python 3.6/Python/Git Personas/DanWhalen/Billboard_Hot_100_Scraper/names"
 threshold = 100
 
 ##DEFINE CUSTOM FUNCTIONS
