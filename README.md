@@ -3,7 +3,7 @@
 ## What is "Billboard Hot 100 Scraper"?
 Given a user specified date range, Billboard Hot 100 Scraper collects the title and artist of all Billboard Hot 100 singles that charted in that date range  (www.billboard.com/charts/hot-100).  It also records the date the single debuted on the charts.  
 
-The scraper then attempts to find and flag all singles with human names appearing in their title (first names only).  The code was custom engineered for a reseach project that required identifying past Billboard Hot 100 pop singles whose lyrics were about a specific, named individual.
+The scraper then attempts to find and flag all singles with human names appearing in their title (first names only).  The code was custom engineered for a reseach project that required identifying past Billboard Hot 100 pop singles about specific, named individuals (fictious or real).
 
 ## How to run "Billboard Hot 100 Scraper"
 There are certain "run parameters" (variables that must be hard coded) users must set before running Billboard Hot 100 Scraper.  These variables are defined in lines 14-20, the block of code labeled "##SET RUN PARAMETERS".
